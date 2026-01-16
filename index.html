@@ -1,53 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <title>tiger panzer website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Tiger Panzer Website</title>
+
+    <!-- einfaches css für anfänger -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: arial, sans-serif;
+            background-color: #eeeeee;
             margin: 0;
-            padding: 20px;
         }
+
         header {
-            text-align: center;
-            background-color: #333;
+            background-color: #333333;
             color: white;
-            padding: 10px 0;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
             padding: 20px;
-            border-radius: 8px;
+            text-align: center;
         }
+
+        nav {
+            background-color: #555555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
         img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
         }
+
         footer {
+            background-color: #333333;
+            color: white;
             text-align: center;
-            margin-top: 20px;
-            font-size: 14px;
-            color: #555;
+            padding: 10px;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Willkommen zu meiner Tiger-Panzer Website!</h1>
-</header>
+    <!-- kopfbereich der website -->
+    <header>
+        <h1>tiger panzer website</h1>
+        
+    </header>
 
-<main>
-    <h2>Ein beeindruckender Tiger Panzer</h2>
-    
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/German_%22Tiger%22_Tank%2C_WWII_%2833804763723%29.jpg" alt="Tiger Panzer">
-    <p>Der Tiger war ein schwerer deutscher Panzer im Zweiten Weltkrieg.</p>
-</main>
+    <!-- navigation -->
+    <nav>
+        <a href="#geschichte">geschichte</a>
+        <a href="#bild">bild</a>
+        <a href="#infos">infos</a>
+    </nav>
+
+    <!-- hauptinhalt -->
+    <main>
+
+        <!-- geschichte abschnitt -->
+        <section id="geschichte">
+            <h2>geschichte des tiger panzers</h2>
+            <p>
+                der tiger panzer war ein schwerer panzer aus dem zweiten weltkrieg.
+                er wurde von deutschland entwickelt und war für seine starke panzerung bekannt.
+            </p>
+        </section>
+
+        <!-- bild abschnitt -->
+        <section id="bild">
+            <h2>tiger panzer bild</h2>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/German_%22Tiger%22_Tank%2C_WWII_%2833804763723%29.jpg" alt="tiger panzer">
+        </section>
+
+        <!-- infos abschnitt -->
+        <section id="infos">
+            <h2>technische infos</h2>
+            <ul>
+                <li>gewicht: ca. 57 tonnen</li>
+                <li>bewaffnung: 88 mm kanone</li>
+                <li>einsatzzeit: 1942 bis 1945</li>
+            </ul>
+        </section>
+
+    </main>
 </body>
 </html>
