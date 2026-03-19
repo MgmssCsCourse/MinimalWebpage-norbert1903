@@ -5,106 +5,148 @@
 <title>Tiger Panzer Website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
 <style>
- body {
- font-family: arial, sans-serif;
- background-color: #eeeeee;
- margin: 0;
-        }
+body {
+    font-family: arial, sans-serif;
+    background-color: #eeeeee;
+    margin: 0;
+}
 
-        header {
-            background-color: #333333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+header {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-        nav {
-            background-color: #555555;
-            padding: 10px;
-            text-align: center;
-        }
+nav {
+    background-color: #555555;
+    padding: 10px;
+    text-align: center;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+/* Dropdown */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
 
-        main {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-            background-color: white;
-        }
+.dropdown button {
+    background-color: #555555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-        section {
-            margin-bottom: 30px;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #666;
+    min-width: 150px;
+}
 
-        img {
-            width: 100%;
-            height: auto;
-        }
+.dropdown-content a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
 
-        footer {
-            background-color: #333333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
-    </head>
+.dropdown-content a:hover {
+    background-color: #777;
+}
 
-    <body>
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-    <!-- kopfbereich der website -->
-    <header>
-        <h1>Tiger Panzer Website</h1>
-        
-    </header>
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
 
-    <!-- navigation -->
-    <nav>
-        <a href="#geschichte">Geschichte</a>
-        <a href="#bild">Bild</a>
-        <a href="#infos">Infos</a>
-    </nav>
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+}
 
-    <!-- hauptinhalt -->
-    <main>
+section {
+    margin-bottom: 30px;
+}
 
-        <!-- geschichte abschnitt -->
-        <section id="geschichte">
-            <h2>Geschichte des Tiger Panzers</h2>
-            <p>
-                Der Tiger Panzer war ein schwerer Panzer aus dem zweiten Weltkrieg.
-                er wurde von Deutschland entwickelt und war für seine starke Panzerung und überweltigende Feuerkraft bekannt.
-                Es gab zwei Modelle des Tiegers. Das erste Modell war der H1 und das zweite Modell war der Teiger E. Der Tieger E 
-                hatte den Undterschied einer niedrigeren Komandantenluke und einem Granatwerfer der in der Turmdecke integriert war.
-                Der Granatwerfer konnte sowol Mörsergranaten als auch Rauchkatuschen schießen.
-            </p>
-        </section>
+img {
+    width: 100%;
+    height: auto;
+}
 
-        <!-- bild abschnitt -->
-        <section id="bild">
-            <h2>Tiger Panzer Bild</h2>
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
 
-            <img src="Panther.png" alt="tiger panzer">
-        </section>
+<body>
 
-        <!-- infos abschnitt -->
-        <section id="infos">
-            <h2>Technische Infos</h2>
-            <ul>
-     <li>Gewicht: ca. 57 Tonnen</li>
-     <li>Bewaffnung: 88 mm kwk36 L/56 kanone</li>
-     <li>Einsatzzeit: 1942 bis 1945</li>
-     <li>Besatzung: 5 man bestehend aus fahrer, Funker/mg schütze, Ladeschütze, Richtschütze und Komandant</li>
-            </ul>
-     </section>
+<header>
+    <h1>Tiger Panzer Website</h1>
+</header>
 
-     </main>       
-     </body>
-     </html>
+<nav>
+    <a href="#geschichte">Geschichte</a>
+
+    <div class="dropdown">
+        <button>Panzer ▼</button>
+        <div class="dropdown-content">
+            <a href="#tiger">Tiger Bild</a>
+            <a href="#panther">Panther Bild</a>
+        </div>
+    </div>
+
+    <a href="#infos">Infos</a>
+</nav>
+
+<main>
+
+<section id="geschichte">
+    <h2>Geschichte des Tiger Panzers</h2>
+    <p>
+        Der Tiger Panzer war ein schwerer Panzer aus dem zweiten Weltkrieg.
+        Er wurde von Deutschland entwickelt und war für seine starke Panzerung und überwältigende Feuerkraft bekannt.
+        Es gab zwei Modelle des Tigers: H1 und Tiger E.
+    </p>
+</section>
+
+<!-- TIGER  -->
+<section id="tiger">
+    <h2>Tiger Panzer Bild</h2>
+    <img src="tiger.png" alt="Tiger Panzer">
+</section>
+
+<!-- PANTHER neu -->
+<section id="panther">
+    <h2>Panther Panzer Bild</h2>
+    <img src="Panther.png" alt="Panther Panzer">
+</section>
+
+<section id="infos">
+    <h2>Technische Infos (Tiger & Panther)</h2>
+    <ul>
+        <li>Gewicht: ca. 57 Tonnen</li>
+        <li>Bewaffnung: 88 mm KwK 36 L/56 Kanone</li>
+        <li>Einsatzzeit: 1942 bis 1945</li>
+        <li>Besatzung: 5 Mann (Fahrer, Funker/MG-Schütze, Ladeschütze, Richtschütze, Kommandant)</li>
+    </ul>
+</section>
+
+</main>
+
+
+</body>
+</html>
