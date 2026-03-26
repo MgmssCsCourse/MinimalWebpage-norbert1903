@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* NAVBAR */
+nav {
+    padding: 10px;
+}
+
+/* MAIN */
+main {
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* BILDER */
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* =========================
+   🇩🇪 DEUTSCHLAND (STAHL)
+   ========================= */
+body.de {
+    background: linear-gradient(135deg, #2b2b2b, #111);
+    color: #ddd;
+}
+
+body.de main {
+    background: #1c1c1c;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+/* =========================
+   🇷🇺 SOWJET (OLIVE)
+   ========================= */
+body.ru {
+    background: linear-gradient(135deg, #556b2f, #2f3e1f);
+    color: #eee;
+}
+
+body.ru main {
+    background: #2f3e1f;
+}
+
+/* =========================
+   🇺🇸 USA (TROPICAL)
+   ========================= */
+body.us {
+    background: linear-gradient(135deg, #3a5f4c, #1e3d34);
+    color: #e0f2f1;
+}
+
+body.us main {
+    background: #1e3d34;
+}
+
+/* CARDS */
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
