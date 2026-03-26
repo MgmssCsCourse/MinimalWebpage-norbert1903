@@ -2,159 +2,61 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scal
-
-<title>Tiger Panzer Website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panzer Übersicht</title>
 
-<style>
-body {
-    font-family: arial, sans-serif;
-    background-color: #eeeeee;
-    margin: 0;
-}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-header {
-    background-color: #333333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    background-color: #555555;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Dropdown */
-.dropdown {
-    display: inline-block;
-    position: relative;
-}
-
-.dropdown button {
-    background-color: #555555;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #666;
-    min-width: 150px;
-}
-
-.dropdown-content a {
-    display: block;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.dropdown-content a:hover {
-    background-color: #777;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-main {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-    background-color: white;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-footer {
-    background-color: #333333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-</style>
+<!-- Fraktur -->
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap" rel="stylesheet">
 </head>
+<body style="text-align:center; background:#111; color:white;">
 
-<body>
+<h1 class="mt-5">Panzer Übersicht</h1>
 
-<header>
-    <h1>Tiger Panzer Website</h1>
-</header>
+<div class="container mt-5">
+  <div class="row g-3">
 
-<nav>
-    <a href="#geschichte">Geschichte</a>
-
-    <div class="dropdown">
-        <button>Panzer ▼</button>
-        <div class="dropdown-content">
-            <a href="#tiger">Tiger Bild</a>
-            <a href="#panther">Panther Bild</a>
-        </div>
+    <!-- Deutschland -->
+    <div class="col-md-4">
+      <a href="deutschland.html" class="btn btn-light w-100 p-4 d-flex align-items-center justify-content-center gap-2">
+        <!-- Balkenkreuz -->
+        <svg width="24" height="24" viewBox="0 0 100 100">
+          <rect x="40" y="10" width="20" height="80" fill="black"/>
+          <rect x="10" y="40" width="80" height="20" fill="black"/>
+        </svg>
+        Deutschland
+      </a>
     </div>
 
-    <a href="#infos">Infos</a>
-</nav>
+    <!-- Sowjet -->
+    <div class="col-md-4">
+      <a href="sowjet.html" class="btn btn-success w-100 p-4 d-flex align-items-center justify-content-center gap-2">
+        <!-- Hammer & Sichel -->
+        <svg width="24" height="24" viewBox="0 0 100 100">
+          <path d="M70 20 A30 30 0 1 0 80 70 A20 20 0 1 1 70 20" fill="yellow"/>
+          <rect x="45" y="20" width="10" height="40" fill="yellow"/>
+          <rect x="40" y="15" width="20" height="10" fill="yellow"/>
+        </svg>
+        Sowjetunion
+      </a>
+    </div>
 
-<main>
+    <!-- USA -->
+    <div class="col-md-4">
+      <a href="usa.html" class="btn btn-success w-100 p-4 d-flex align-items-center justify-content-center gap-2">
+        <!-- WW2 Stern -->
+        <svg width="24" height="24" viewBox="0 0 100 100">
+          <polygon points="50,10 61,40 95,40 67,60 78,90 50,70 22,90 33,60 5,40 39,40"
+          fill="white"/>
+        </svg>
+        USA
+      </a>
+    </div>
 
-<section id="geschichte">
-    <h2>Geschichte des Tiger Panzers</h2>
-    <p>
-        Der Tiger Panzer war ein schwerer Panzer aus dem zweiten Weltkrieg.
-        Er wurde von Deutschland entwickelt und war für seine starke Panzerung und überwältigende Feuerkraft bekannt.
-        Es gab zwei Modelle des Tigers: H1 und Tiger E.
-    </p>
-</section>
-
-<!-- TIGER  -->
-<section id="tiger">
-    <h2>Tiger Panzer Bild</h2>
-    <img src="IMG_0889.jpeg" alt="Tiger Panzer">
-</section>
-<li>Gewicht: ca. 57 Tonnen</li>
-        <li>Bewaffnung: 88 mm KwK 36 L/56 Kanone</li>
-        <li>Einsatzzeit: 1942 bis 1945</li>
-        <li>Besatzung: 5 Mann (Fahrer, Funker/MG-Schütze, Ladeschütze, Richtschütze, Kommandant)</li>
-    </ul>
-<!-- PANTHER neu -->
-<section id="panther">
-    <h2>Panther Panzer Bild</h2>
-    <img src="Panther.png" alt="Panther Panzer">
-</section>
-<h2>Geschichte des Panthers </h2>
-<p></p>
-<section id="infos">
-    <h2>Technische Infos (Panther)</h2>
-    <ul>
-        <li>Gewicht: ca. 45 Tonnen</li>
-        <li>Bewaffnung: 75 mm KwK42 L/70 Kanone</li>
-        <li>Einsatzzeit: 1943 bis 1945</li>
-        <li>Besatzung: 5 Mann (Fahrer, Funker/MG-Schütze, Ladeschütze, Richtschütze, Kommandant)</li>
-    </ul>
-</section>
-
-</main>
-
+  </div>
+</div>
 
 </body>
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </html>
