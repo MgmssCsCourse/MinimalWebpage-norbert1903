@@ -3,67 +3,52 @@ body {
     margin: 0;
 }
 
-/* NAVBAR */
-nav {
-    padding: 10px;
+/* Überschriften */
+h1, h2 {
+    margin-bottom: 20px;
 }
 
-/* MAIN */
+/* Fraktur nur für Deutschland */
+.de h1 {
+    font-family: "UnifrakturCook", serif;
+}
+
+/* Layout */
 main {
     padding: 30px;
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
-    border-radius: 10px;
 }
 
-/* BILDER */
+/* Bilder */
 img {
     width: 100%;
-    border-radius: 10px;
+    height: auto;
 }
 
-/* =========================
-   🇩🇪 DEUTSCHLAND (STAHL)
-   ========================= */
+/* Farben */
 body.de {
-    background: linear-gradient(135deg, #2b2b2b, #111);
-    color: #ddd;
+    background: #2b2b2b;
+    color: white;
 }
 
-body.de main {
-    background: #1c1c1c;
-    box-shadow: 0 0 20px rgba(255,255,255,0.1);
-}
-
-/* =========================
-   🇷🇺 SOWJET (OLIVE)
-   ========================= */
 body.ru {
-    background: linear-gradient(135deg, #556b2f, #2f3e1f);
-    color: #eee;
+    background: #556b2f;
+    color: white;
 }
 
-body.ru main {
-    background: #2f3e1f;
-}
-
-/* =========================
-   🇺🇸 USA (TROPICAL)
-   ========================= */
 body.us {
-    background: linear-gradient(135deg, #3a5f4c, #1e3d34);
-    color: #e0f2f1;
+    background: #3a5f4c;
+    color: white;
 }
 
-body.us main {
-    background: #1e3d34;
+/* Accordion clean */
+.accordion-button {
+    background: #444;
+    color: white;
 }
 
-/* CARDS */
-.card {
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.03);
+.accordion-body {
+    background: #222;
+    color: white;
 }
