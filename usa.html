@@ -14,28 +14,33 @@
 
 <nav class="navbar navbar-dark bg-dark">
   <div class="container">
-    <a href="index.html" class="navbar-brand">🌍 Übersicht</a>
+    <a href="index.html" class="navbar-brand">Übersicht</a>
   </div>
 </nav>
 
 <main>
 
-<h1 class="mb-4">🇺🇸 US Panzer</h1>
+<h1>US Panzer</h1>
 
-<div class="row g-4">
+<div class="accordion" id="usPanzer">
 
-<div class="col-md-6">
-<div class="card bg-dark text-light">
-<img src="images/sherman.jpg">
-<div class="card-body">
-<h3>M4 Sherman</h3>
-</div>
-</div>
-</div>
+  <div class="accordion-item">
+    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sherman">
+      M4 Sherman
+    </button>
+    <div id="sherman" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <img src="images/sherman.jpg">
+        <p>Standardpanzer der USA im Zweiten Weltkrieg.</p>
+      </div>
+    </div>
+  </div>
 
 </div>
 
 </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
