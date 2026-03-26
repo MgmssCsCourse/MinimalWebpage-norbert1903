@@ -35,3 +35,8 @@ body.us { background: #3a5f4c; color: white; }
 
 /* Buttons mit Icons */
 .btn svg { display: inline-block; margin-right: 8px; vertical-align: middle; }
+
+/* Fraktur für alle Überschriften auf deutschen Seiten */
+body.de h1, body.de h2, body.de h3 {
+    font-family: "UnifrakturCook", serif;
+}
