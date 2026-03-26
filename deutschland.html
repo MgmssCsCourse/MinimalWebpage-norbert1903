@@ -8,45 +8,58 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<!-- Fraktur Schrift -->
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap" rel="stylesheet">
 </head>
 
 <body class="de">
 
 <nav class="navbar navbar-dark bg-dark">
   <div class="container">
-    <a href="index.html" class="navbar-brand">🌍 Übersicht</a>
+    <a href="index.html" class="navbar-brand">Übersicht</a>
   </div>
 </nav>
 
 <main>
 
-<h1 class="mb-4">🇩🇪 Deutsche Panzer</h1>
+<h1>Deutsche Panzer</h1>
 
-<div class="row g-4">
+<div class="accordion" id="dePanzer">
 
-<div class="col-md-6">
-<div class="card bg-dark text-light">
-<img src="images/tiger.jpg">
-<div class="card-body">
-<h3>Tiger I</h3>
-<p>Schwerer Panzer mit 88mm Kanone.</p>
-</div>
-</div>
-</div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#tiger">
+        Tiger I
+      </button>
+    </h2>
+    <div id="tiger" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <img src="images/tiger.jpg">
+        <p>Schwerer Panzer mit 88mm Kanone.</p>
+      </div>
+    </div>
+  </div>
 
-<div class="col-md-6">
-<div class="card bg-dark text-light">
-<img src="images/panther.jpg">
-<div class="card-body">
-<h3>Panther</h3>
-<p>Mittlerer Panzer mit starker Frontpanzerung.</p>
-</div>
-</div>
-</div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#panther">
+        Panther
+      </button>
+    </h2>
+    <div id="panther" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <img src="images/panther.jpg">
+        <p>Mittlerer Panzer mit starker Panzerung.</p>
+      </div>
+    </div>
+  </div>
 
 </div>
 
 </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
