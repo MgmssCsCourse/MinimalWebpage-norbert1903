@@ -1,46 +1,13 @@
-
-        
+<!doctype html>
 <html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>USA Panzer</title>
-<!-- M4 SHERMAN MODAL -->
-<div class="modal fade" id="shermanModal">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content bg-dark text-light">
 
-      <div class="modal-header">
-        <h2>M4 Sherman</h2>
-        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-
-        <p>
-          Der M4 Sherman war der Standardpanzer der USA im Zweiten Weltkrieg. 
-          Er war zuverlässig, leicht zu produzieren und wurde weltweit eingesetzt.
-        </p>
-
-        <img src="images/sherman.jpg" class="mb-3">
-
-        <ul>
-          <li>Besatzung: 5 Mann (Fahrer, Funker, Ladeschütze, Richtschütze, Kommandant)</li>
-          <li>Aufgaben: Mittlerer Panzer / Unterstützung / Infanterie</li>
-          <li>Dienstzeit: 1942–1945</li>
-          <li>Bewaffnung: 75 mm M3 Kanone + 2 × .30 cal MG</li>
-        </ul>
-
-      </div>
-
-    </div>
-  </div>
-</div>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="us">
 
 <nav class="navbar navbar-dark bg-dark">
@@ -49,29 +16,43 @@
   </div>
 </nav>
 
-<main>
-
+<main class="container mt-4">
 <h1>US Panzer</h1>
+<div class="row g-4">
 
-<div class="accordion" id="usPanzer">
+<div class="col-md-6">
+  <div class="card p-3 bg-dark text-light" data-bs-toggle="modal" data-bs-target="#shermanModal">
+    <img src="images/sherman.jpg">
+    <h3 class="mt-2">M4 Sherman</h3>
+  </div>
+</div>
 
-  <div class="accordion-item">
-    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sherman">
-      M4 Sherman
-    </button>
-    <div id="sherman" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        <img src="images/sherman.jpg">
-        <p>Standardpanzer der USA im Zweiten Weltkrieg.</p>
+</div>
+</main>
+
+<!-- Sherman Modal -->
+<div class="modal fade" id="shermanModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h2>M4 Sherman</h2>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Der M4 Sherman war der Standardpanzer der USA im Zweiten Weltkrieg...</p>
+        <img src="images/sherman.jpg" class="mb-3">
+        <ul>
+          <li>Besatzung: 5 Mann</li>
+          <li>Aufgaben: Mittlerer Panzer / Unterstützung / Infanterie</li>
+          <li>Dienstzeit: 1942–1945</li>
+          <li>Bewaffnung: 75 mm M3 Kanone + 2 MG</li>
+        </ul>
       </div>
     </div>
   </div>
-
 </div>
 
-</main>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
+        
