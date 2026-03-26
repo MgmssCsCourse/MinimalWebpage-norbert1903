@@ -14,55 +14,45 @@
 
 <nav class="navbar navbar-dark bg-dark">
   <div class="container">
-    <a href="index.html" class="navbar-brand">🌍 Übersicht</a>
+    <a href="index.html" class="navbar-brand">Übersicht</a>
   </div>
 </nav>
 
 <main>
 
-<h1 class="mb-4">🇷🇺 Sowjet Panzer</h1>
+<h1>Sowjetische Panzer</h1>
 
-<div class="row g-4">
+<div class="accordion" id="ruPanzer">
 
-<div class="col-md-6">
-<div class="card bg-dark text-light">
-<img src="images/t34.jpg">
-<div class="card-body">
-<h3>T-34</h3>
-</div>
-</div>
-</div>
+  <div class="accordion-item">
+    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t34">
+      T-34
+    </button>
+    <div id="t34" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <img src="images/t34.jpg">
+        <p>Mittlerer Panzer, sehr effektiv im Krieg.</p>
+      </div>
+    </div>
+  </div>
 
-<div class="col-md-6">
-<div class="card bg-dark text-light">
-<img src="images/kv1.jpg">
-<div class="card-body">
-<h3>KV-1</h3>
-</div>
-</div>
-</div>
-
-<div class="col-md-6">
-<div class="card bg-dark text-light">
-<img src="images/is2.jpg">
-<div class="card-body">
-<h3>IS-2</h3>
-</div>
-</div>
-</div>
-
-<div class="col-md-6">
-<div class="card bg-dark text-light">
-<img src="images/su100.jpg">
-<div class="card-body">
-<h3>SU-100</h3>
-</div>
-</div>
-</div>
+  <div class="accordion-item">
+    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#kv1">
+      KV-1
+    </button>
+    <div id="kv1" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <img src="images/kv1.jpg">
+        <p>Schwer gepanzert und robust.</p>
+      </div>
+    </div>
+  </div>
 
 </div>
 
 </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
