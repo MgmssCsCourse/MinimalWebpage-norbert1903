@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panzer-Archiv</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .archive-header { padding: 12vh 0 8vh; text-align: center; }
+    .main-title { font-size: 5rem; letter-spacing: 4px; text-transform: uppercase; margin: 0; text-shadow: 0 0 30px rgba(255,255,255,0.1); }
+    
+    .nation-card-index {
+      background: rgba(20, 20, 20, 0.6);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 60px 30px;
+      text-decoration: none !important;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      transition: all 0.4s ease; height: 350px;
+    }
+    .nation-card-index:hover { transform: translateY(-10px); background: rgba(30, 30, 30, 0.9); }
+    
+    .icon-vault {
+      width: 110px; height: 110px; background: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transition: 0.4s ease;
+    }
+    .nation-card-index:hover .icon-vault { transform: scale(1.1); }
+    
+    .nation-name-index { font-size: 2.5rem; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 2px; margin: 0; }
+
+    DEUTSCHLAND SCHRIFT ANGEPASST
+    .nation-ger .nation-name-index {
+      font-family: 'UnifrakturCook', cursive !important;
+      font-size: 2.5rem;
+      text-transform: none;
+      letter-spacing: 1px;
+    }
+
+    /* Glows */
+    .nation-ger:hover { box-shadow: 0 20px 50px rgba(197, 160, 89, 0.15); border-color: #c5a059; }
+    .nation-sov:hover { box-shadow: 0 20px 50px rgba(255, 50, 50, 0.15); border-color: #ff3232; }
+    .nation-usa:hover { box-shadow: 0 20px 50px rgba(118, 255, 3, 0.15); border-color: #76ff03; }
+  </style>
+</head>
+<body>
+
+<header class="archive-header">
+  <div class="container"><h1 class="main-title">Panzer-Archiv</h1></div>
+</header>
+
+<main class="container">
+  <div class="row g-4 justify-content-center">
+    <div class="col-lg-4 col-md-6">
+      <a href="deutschland.html" class="nation-card-index nation-ger">
+        <div class="icon-vault">
+          <svg width="60" height="60" viewBox="0 0 512 512"><path fill="#000" d="M486 203.066v105.879H308.934V486H203.066V308.934H26V203.066h177.066V26h105.879v177.066zm0-83.405h-93.638V26.023h-22.564v116.235H486v-22.563zM142.258 26.023h-22.563v93.638H26.056v22.563h116.202V26zm0 343.742H26v22.563h93.638v93.638h22.563V369.742zm250.081 22.563h93.638v-22.563H369.742V486h22.563v-93.638z"/></svg>
+        </div>
+        <h2 class="nation-name-index">Deutschland</h2>
+      </a>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <a href="sowjet.html" class="nation-card-index nation-sov">
+        <div class="icon-vault">
+          <svg width="60" height="60" viewBox="0 0 512 512"><path fill="#000" d="M257.316 21.44C434.586 160.414 438.15 262.89 384.48 315.87l55.65 55.648c81.846-100.582 74.738-275.933-182.814-350.08zm-37.92 21.664c-16.713 4.847-34.67 7.066-50.61 6.75c-13.684-.27-25.71-1.44-34.936-6.41L21.13 156.163l55.15 55.156L231.946 55.656zm-41.29 91.85l-43.84 43.84L442 486.523c3.005 3.007 6.436 3.516 12.582 1.646s13.72-6.735 19.943-12.957s11.087-13.8 12.957-19.945c1.87-6.146 1.363-9.577-1.642-12.582L178.105 134.953zm-8.665 179.735l-40.75 37.124l50.814 50.346c59.746 49.805 126.245 53.237 182.033 29.36l-75.273-75.274c-43.74 2.716-88.647-10.463-116.823-41.557zm-58.936 45.873c-5.525 1.065-8.977 2.957-11.315 5.25c-1.957 1.922-3.25 4.556-4.25 7.564l55.19 52.844c5.467-1.007 9.262-2.795 11.278-4.687c1.997-1.872 3.096-3.863 3.096-7.53l-54-53.44zm-24.72 30.314L30.16 441.562c-16.737 27 14.694 61.2 51.094 44.66l51.53-50.28l-47-45.063v-.003z"/></svg>
+        </div>
+        <h2 class="nation-name-index">Sowjetunion</h2>
+      </a>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <a href="usa.html" class="nation-card-index nation-usa">
+        <div class="icon-vault">
+          <svg width="60" height="60" viewBox="0 0 100 100"><polygon points="50,10 61,40 95,40 67,60 78,90 50,70 22,90 33,60 5,40 39,40" fill="#000"/></svg>
+        </div>
+        <h2 class="nation-name-index">USA</h2>
+      </a>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
